@@ -1,0 +1,1 @@
+<?php header('Link: <https://www.php.net/images/logos/php_script.ico>; rel="shortcut icon"') ?><?php header('Content-Type: text/json'); ?>{"number":"<?php echo rand(100001, 9999999);?>"}
