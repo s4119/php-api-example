@@ -20,7 +20,7 @@ $decoded_json6 = json_decode($people_json6, false);
 
 echo '<html><head>';
 echo $w3css;
-echo '</head><body class="w3-padding-large"><h3>';
+echo '</head><body class="w3-padding-large"><div class="w3-card w3-red"><h2>PHP API Status</h2></div><br><h3>';
 echo $spanstart;
 echo 'reverseString: ';
 echo $spanend;
