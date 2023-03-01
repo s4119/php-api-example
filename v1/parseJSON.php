@@ -7,7 +7,7 @@ $decoded_json = json_decode($people_json, false);
 $decoded_json2 = json_decode($people_json2, false);
 echo '<html><head>';
 echo $w3css;
-echo '</head><body><h3>'
+echo '</head><body><h3>';
 echo $decoded_json->reversed;
 echo $linebreak;
 echo $decoded_json2->phpversion;
