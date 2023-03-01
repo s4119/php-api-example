@@ -1,5 +1,5 @@
 <?php
-$people_json = file_get_contents('reverseString?content=tacocat');
+$people_json = file_get_contents('reverseString.php?content=tacocat');
 $decoded_json = json_decode($people_json, false);
 echo $decoded_json->reversed;
 // Monty 
