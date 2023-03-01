@@ -32,7 +32,7 @@ a {
 
 </ul>
 
-<div class="footer w3-container w3-teal"><h4>The API returns raw JSON files</h4><h6>made by s4119</h6></div>
+<div class="footer w3-container w3-teal"><h4>The API returns raw JSON files</h4><h6>made by s4119 / <a href="https://codeberg.org/virtuedev/php-api-example">source code</a></h6></div>
 
 
 
