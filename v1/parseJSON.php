@@ -47,7 +47,7 @@ echo $spanend;
 echo $decoded_json5->ipv4;
 echo $linebreak;
 echo $spanstart;
-echo 'binaryString: '
+echo 'binaryString: ';
 echo $spanend;
 echo $decoded_json6->binary;
 echo $linebreak;
