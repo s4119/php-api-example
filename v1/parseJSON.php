@@ -1,5 +1,5 @@
 <?php
-$people_json = file_get_contents('/api/v1/reverseString.php?content=tacocat');
+$people_json = file_get_contents('http://jwist.125mb.com/api/v1/reverseString.php?content=tacocat');
 $decoded_json = json_decode($people_json, false);
 echo $decoded_json->reversed;
 // Monty 
