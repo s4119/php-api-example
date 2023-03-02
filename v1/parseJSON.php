@@ -66,7 +66,7 @@ echo $linebreak;
 echo $spanstart;
 echo 'if anything is not working sorry';
 echo $spanend;
-echo $linebreak
+echo $linebreak;
 echo $decoded_json7->reversed;
 
 
