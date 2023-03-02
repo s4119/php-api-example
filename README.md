@@ -6,3 +6,5 @@ Note: most files in this repository are made to work with a subdirectory named `
 ### [Live Demo](http://jwist.125mb.com/api/)
 
 Fun Fact: This repository exactly mirrors the live demo above. even this README.md file exists.
+
+#### [Here's an example of what it should look like.](http://filemanager.batcave.net/api/)
