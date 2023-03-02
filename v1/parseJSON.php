@@ -3,7 +3,7 @@ $linebreak = '<br>';
 $spanstart = '<span class="w3-text-red">';
 $spanend = '</span>';
 // binaryString?content=works
-$w3css = '<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">';
+$w3css = '<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><link rel="icon" href="https://www.php.net/images/logos/php_script.ico"><title>API Status</title>';
 $people_json = file_get_contents('http://jwist.125mb.com/api/v1/reverseString?content=reversed-desrever');
 $people_json2 = file_get_contents('http://jwist.125mb.com/api/v1/getVersion');
 $people_json3 = file_get_contents('http://jwist.125mb.com/api/v1/getNumber');
