@@ -18,6 +18,17 @@ $decoded_json4 = json_decode($people_json4, false);
 $decoded_json5 = json_decode($people_json5, false);
 $decoded_json6 = json_decode($people_json6, false);
 
+$data1 = 'http://jwist.125mb.com/api/v1/reverseString?content=';
+$data2 = $decoded_json4->string;
+
+$result = $data1 . $data2;
+
+$people_json7 = file_get_contents($result);
+$decoded_json7 = json_decode($people_json7, false);
+
+
+
+
 echo '<html><head>';
 echo $w3css;
 echo '</head><body class="w3-padding-large"><div class="w3-card w3-container w3-red"><h2>PHP API Status</h2></div><br><h3>';
@@ -55,6 +66,9 @@ echo $linebreak;
 echo $spanstart;
 echo 'if anything is not working sorry';
 echo $spanend;
+echo $linebreak
+echo $decoded_json7->reversed;
+
 
 
 
