@@ -1,0 +1,104 @@
+<?php
+/************
+delete parseJSON.php and rename this file once you've set all variables required
+
+PHP API Example
+by s4119
+
+Ignore these variables.
+The next comment will end this section.
+************/
+$linebreak = '<br>';
+$spanstart = '<span class="w3-text-red">';
+$spanend = '</span>';
+$w3css = '<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><link rel="icon" href="https://www.php.net/images/logos/php_script.ico"><title>API Status</title>';
+/**********\
+
+End Ignored Variables
+
+\***********/
+
+// Change domain.ext to your website (and change /api/ if needed)
+$people_json = file_get_contents('http://domain.ext/api/v1/reverseString?content=reversed-desrever');
+$people_json2 = file_get_contents('http://domain.ext/api/v1/getVersion');
+$people_json3 = file_get_contents('http://domain.ext/api/v1/getNumber');
+$people_json4 = file_get_contents('http://domain.ext/api/v1/getString');
+$people_json5 = file_get_contents('http://domain.ext/api/v1/getIPv4');
+$people_json6 = file_get_contents('http://domain.ext/api/v1/binaryString?content=works');
+/****\
+Note: The same works for decoded_json
+people_json: reverseString
+people_json2: getVersion
+people_json3: getNumber
+people_json4: getString
+people_json5: getIPv4
+people_json6: binaryString
+people_json7: reverseString getString
+\****/
+$decoded_json = json_decode($people_json, false);
+$decoded_json2 = json_decode($people_json2, false);
+$decoded_json3 = json_decode($people_json3, false);
+$decoded_json4 = json_decode($people_json4, false);
+$decoded_json5 = json_decode($people_json5, false);
+$decoded_json6 = json_decode($people_json6, false);
+$data1 = 'http://domain.ext/api/v1/reverseString?content=';
+$data2 = $decoded_json4->string;
+$result = $data1 . $data2;
+$people_json7 = file_get_contents($result);
+$decoded_json7 = json_decode($people_json7, false);
+
+/* you don't have to change this code unless you want to */
+
+
+echo '<html><head>';
+echo $w3css;
+echo '</head><body class="w3-padding-large"><div class="w3-card w3-container w3-red"><h2>PHP API Status</h2></div><br><h3>';
+echo $spanstart;
+echo 'reverseString: ';
+echo $spanend;
+echo $decoded_json->reversed;
+echo $linebreak;
+echo $spanstart;
+echo 'getVersion: ';
+echo $spanend;
+echo $decoded_json2->phpversion;
+echo $linebreak;
+echo $spanstart;
+echo 'getNumber: ';
+echo $spanend;
+echo $decoded_json3->number;
+echo $linebreak;
+echo $spanstart;
+echo 'getString: ';
+echo $spanend;
+echo $decoded_json4->string;
+echo $linebreak;
+echo $spanstart;
+echo 'getIPv4: ';
+echo $spanend;
+echo $decoded_json5->ipv4;
+echo $linebreak;
+echo $spanstart;
+echo 'binaryString: ';
+echo $spanend;
+echo $decoded_json6->binary;
+echo $linebreak;
+echo $spanstart;
+echo 'reverseString getString: ';
+echo $spanend;
+echo $decoded_json7->reversed;
+echo $linebreak;
+echo $linebreak;
+echo $spanstart;
+echo 'PHP API Example by s4119';
+echo $spanend;
+
+
+
+
+
+
+
+echo '</h3></body></html>';
+
+?>
