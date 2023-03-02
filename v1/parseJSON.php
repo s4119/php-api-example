@@ -62,12 +62,16 @@ echo 'binaryString: ';
 echo $spanend;
 echo $decoded_json6->binary;
 echo $linebreak;
+echo $spanstart;
+echo 'reverseString getString: '
+echo $spanend;
+echo $decoded_json7->reversed;
+echo $linebreak;
 echo $linebreak;
 echo $spanstart;
 echo 'if anything is not working sorry';
 echo $spanend;
-echo $linebreak;
-echo $decoded_json7->reversed;
+
 
 
 
