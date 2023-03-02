@@ -63,7 +63,7 @@ echo $spanend;
 echo $decoded_json6->binary;
 echo $linebreak;
 echo $spanstart;
-echo 'reverseString getString: '
+echo 'reverseString getString: ';
 echo $spanend;
 echo $decoded_json7->reversed;
 echo $linebreak;
