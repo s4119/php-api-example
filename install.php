@@ -31,7 +31,25 @@ echo '<span class="w3-jumbo">Unzip: Success!</span>';
 rename("./s4119-php-api-example-92e735d", "./api");
 echo '<br><span class="w3-xxlarge">Rename: Success!</span><br>';
 // $_SERVER["SERVER_SOFTWARE"]
+$file_pointer = "DELETE_ME.zip";
+  
+// Use unlink() function to delete a file
+if (!unlink($file_pointer)) {
+    echo ("$file_pointer cannot be deleted due to an error");
+}
+else {
 
+}
+$file_pointers = "install.php";
+
+if (!unlink($file_pointers)) {
+    echo ("$file_pointers cannot be deleted due to an error");
+}
+else {
+
+}
+
+ 
 $t = $_SERVER["SERVER_SOFTWARE"];
 
 if ($t == "Apache") {
