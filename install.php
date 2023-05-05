@@ -52,7 +52,7 @@ else {
  
 $t = $_SERVER["SERVER_SOFTWARE"];
 
-if ($t == "Apache") {
+if (preg_match("/\s" . "Apache" . "\s/", $t)) {
   rename("./api/htaccess.apache", "./api/.htaccess");
   rename("./api/v1/htaccess.apache", "./api/v1/.htaccess");
   echo "<span class='w3-large'>Detected Apache... your htaccess has been renamed!</span>";
