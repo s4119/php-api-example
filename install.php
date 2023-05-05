@@ -61,7 +61,7 @@ if (preg_match("/\s" . "Apache" . "\s/", $t)) {
   rename("./api/v1/htaccess.nginx", "./api/v1/.htaccess");
   echo "<span class='w3-large'>Detected nginx... your htaccess has been renamed!</span>";
 } else {
-  echo "<span class='w3-large'>you will need to rename your .htaccess manually, we couldn't detect your server software!</span>";
+  echo "<span class='w3-large'>you will need to rename your access files manually, we couldn't detect your server software!</span>";
 }
 echo '<br><h2><a href="api">Click here to view your newly installed API endpoint!</a></h2>';
 ?>
