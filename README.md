@@ -3,7 +3,7 @@
 
 Note: most files in this repository are made to work with a subdirectory named `/api/`. If you choose to not use this directory, you will most notably have to change the index.php file.
 
-### [Live Demo](http://jwist.batcave.com/api/)
+### [Live Demo](http://jwist.batcave.net/api/)
 
 Fun Fact: This repository exactly mirrors the live demo above. even this README.md file exists.
 
